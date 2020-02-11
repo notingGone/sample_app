@@ -5,5 +5,5 @@ class StaticPagesController < ApplicationController
 
   def about; end
 
-  def contat; end
+  def contact; end
 end
