@@ -10,15 +10,19 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', about_path
     assert_select 'a[href=?]', contact_path
     assert_select 'a[href=?]', signup_path
+
     get contact_path
     assert_template 'static_pages/contact'
     assert_select 'title', full_title('Contact')
+
     get help_path
     assert_template 'static_pages/help'
     assert_select 'title', full_title('Help')
+
     get about_path
     assert_template 'static_pages/about'
     assert_select 'title', full_title('About')
+    
     get signup_path
     assert_template 'users/new'
     assert_select 'title', full_title('Signup')
