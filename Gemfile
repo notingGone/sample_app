@@ -5,7 +5,7 @@ gem 'bcrypt',         '3.1.13'
 gem 'bootsnap',       '1.4.5', require: false
 gem 'bootstrap-sass', '3.4.1'
 gem 'jbuilder',       '2.9.1'
-gem 'puma',           '3.12.2'
+gem 'puma',           '3.12.4'
 gem 'rails',          '6.0.2.1'
 gem 'sass-rails',     '5.1.0'
 gem 'turbolinks',     '5.2.0'
